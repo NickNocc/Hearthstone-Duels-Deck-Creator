@@ -1,4 +1,8 @@
 import React from "react";
+import brann from "../../Images/Brann/Hero_Brann.webp";
+import demon_hunter from "../../Images/Demon_Hunter/Hero_Stelina.webp";
+import drekthar from "../../Images/DrekThar/Hero_DrekThar.webp"
+import druid from "../../Images/Druid/Hero_Omu.webp"
 
 
 const HeroSelect = () => {
