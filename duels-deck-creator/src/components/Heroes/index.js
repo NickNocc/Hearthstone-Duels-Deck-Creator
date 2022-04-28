@@ -3,6 +3,11 @@ import brann from "../../Images/Brann/Hero_Brann.webp";
 import demon_hunter from "../../Images/Demon_Hunter/Hero_Stelina.webp";
 import drekthar from "../../Images/DrekThar/Hero_DrekThar.webp"
 import druid from "../../Images/Druid/Hero_Omu.webp"
+import elise from "../../Images/Elise/Hero_Elise.webp"
+import finley from "../../Images/Finley/Hero_Finley.webp"
+import hunter from "../../Images/Hunter/Hero_Slate.webp"
+import mage from "../../Images/Mage/Hero_Mozaki.webp"
+import paladin from "../../Images/Paladin/Hero_Turalyon.webp"
 
 
 const HeroSelect = () => {
