@@ -30,7 +30,12 @@ const HeroSelect = () => {
         <img src={mage} alt="Mozaki"></img>
         <img src={paladin} alt="Turalyon"></img>
         <img src={priest} alt="Illucia"></img>
-   
+        <img src={reno} alt="Reno"></img>
+        <img src={rogue} alt="Lilian"></img>
+        <img src={shaman} alt="Fireheart"></img>
+        <img src={vanndar} alt="Vanndar"></img>
+        <img src={warlock} alt="Willow"></img>
+        <img src={warrior} alt="Rattlegore"></img>
 
       </div>
     </div>
