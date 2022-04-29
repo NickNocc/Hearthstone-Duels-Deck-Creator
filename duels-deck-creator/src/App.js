@@ -1,10 +1,14 @@
-import './App.css';
-import HeroSelect from './components/Heroes';
+import "./App.css";
+import HeroSelect from "./components/Heroes";
+import { Navbar } from "./components/Navbar";
 
 function App(props) {
   return (
-    <HeroSelect></HeroSelect>
-  )
+    <>
+      <Navbar></Navbar>
+      <HeroSelect></HeroSelect>
+    </>
+  );
 }
 
 export default App;
