@@ -26,6 +26,10 @@ const HeroSelect = () => {
         <img src={druid} alt="Omu"></img>
         <img src={elise} alt="Elise"></img>
         <img src={finley} alt="Finley"></img>
+        <img src={hunter} alt="Slate"></img>
+        <img src={mage} alt="Mozaki"></img>
+        <img src={paladin} alt="Turalyon"></img>
+        <img src={priest} alt="Illucia"></img>
    
 
       </div>
