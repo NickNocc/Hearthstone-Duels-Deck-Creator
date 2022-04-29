@@ -23,7 +23,10 @@ const HeroSelect = () => {
         <img src={brann} alt="Brann"></img>
         <img src={demon_hunter} alt="Stelina"></img>
         <img src={drekthar} alt="Drek'Thar"></img>
-
+        <img src={druid} alt="Omu"></img>
+        <img src={elise} alt="Elise"></img>
+        <img src={finley} alt="Finley"></img>
+   
 
       </div>
     </div>
