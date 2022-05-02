@@ -14,10 +14,17 @@ export const Navbar = (props) => {
 
   const [selection] = useState([
     {
-      name: "Brann",
+      name: "Hero_Brann",
       class: "Warrior, Hunter",
     },
+    {
+      name: "Hero_Stelina",
+      class: "Demon Hunter"
+    }
   ]);
+
+  console.log(selection);
+
   const [currentHero, setCurrentHero] = useState(selection)
   const [currentHP, setCurrentHP] = useState([0, 1, 2, 3]);
   const [currentST, setCurrentST] = useState([0, 1, 2, 3]);

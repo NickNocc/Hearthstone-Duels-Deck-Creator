@@ -8,7 +8,7 @@ export const Modal = ({ onClose, setCurrentHero, setCurrentHP, setCurrentST }) =
       <div className="modalContainer">
         <h3 className="modalTitle"> </h3>
         <HeroSelect
-
+        onClose={onClose}
           heroes={setCurrentHero}
           currentHero={setCurrentHP}
           currentHP={setCurrentHP}
