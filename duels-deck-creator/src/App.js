@@ -1,10 +1,14 @@
-import './App.css';
-import HeroSelect from './components/Heroes';
+import { useState } from "react";
+import "./App.css";
+
+import { Navbar } from "./components/Navbar";
 
 function App(props) {
   return (
-    <HeroSelect></HeroSelect>
-  )
+    <>
+      <Navbar></Navbar>
+    </>
+  );
 }
 
 export default App;

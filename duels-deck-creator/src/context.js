@@ -5,7 +5,6 @@ export const HeroGallery = React.createContext();
 
 export const GalleryProvider = (props) => {
 
-    const INITIAL_STATE = { buildPhase: false }
 
     const phaseReducer = (state, action) => {
         switch (action.type) {
