@@ -1,43 +1,35 @@
 import React from "react";
-import brann from "../../Images/Brann/Hero_Brann.webp";
-import demon_hunter from "../../Images/Demon_Hunter/Hero_Stelina.webp";
-import drekthar from "../../Images/DrekThar/Hero_DrekThar.webp";
-import druid from "../../Images/Druid/Hero_Omu.webp";
-import elise from "../../Images/Elise/Hero_Elise.webp";
-import finley from "../../Images/Finley/Hero_Finley.webp";
-import hunter from "../../Images/Hunter/Hero_Slate.webp";
-import mage from "../../Images/Mage/Hero_Mozaki.webp";
-import paladin from "../../Images/Paladin/Hero_Turalyon.webp";
-import priest from "../../Images/Priest/Hero_Illucia.webp";
-import reno from "../../Images/Reno/Hero_Reno.webp";
-import rogue from "../../Images/Rogue/Hero_Lilian.webp";
-import shaman from "../../Images/Shaman/Hero_Fireheart.webp";
-import vanndar from "../../Images/Vanndar/Hero_Vanndar.webp";
-import warlock from "../../Images/Warlock/Hero_Willow.webp";
-import warrior from "../../Images/Warrior/Hero_Rattlegore.webp";
 
 const HeroSelect = (props) => {
-  const { onClose, setCurrentHero, toggleModal } = props
+  const { onClose, heroes, setHeroes } = props;
 
-  console.log(setCurrentHero);
+  console.log(heroes);
 
   return (
     <div className="heroWrapper">
       <div onClick={onClose} className="heroSelect">
-        <span
-          onClick={() => {
-            setCurrentHero("Hero_Brann");
-          }}
-        >
+        {heroes.map((hero, i) => (
+          <>
+            <img
+              src={hero.heroPortrait}
+              alt={i}
+              key={hero.id}
+            />
+            <span
+              onClick={() => {
+                setHeroes(hero[i]);
+                onClose();
+              }}
+              // key={i}
+            ></span>
+          </>
+        ))}
+
+        {/* <span onClick={() => {}}>
           {" "}
           <img src={brann} alt="Brann" />
         </span>
-        <span
-          onClick={() => {
-            setCurrentHero("Hero_Stelina");
-            toggleModal(false);
-          }}
-        >
+        <span onClick={() => {}}>
           <img src={demon_hunter} alt="Stelina" />
         </span>
         <img src={drekthar} alt="Drek'Thar"></img>
@@ -53,7 +45,7 @@ const HeroSelect = (props) => {
         <img src={shaman} alt="Fireheart"></img>
         <img src={vanndar} alt="Vanndar"></img>
         <img src={warlock} alt="Willow"></img>
-        <img src={warrior} alt="Rattlegore"></img>
+        <img src={warrior} alt="Rattlegore"></img> */}
       </div>
     </div>
   );
