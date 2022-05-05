@@ -29,9 +29,14 @@ function App() {
       heroName: "Brann",
       class: "Brann",
       heroPower: brannHP1,
-      hpSelect1: brannHP1,
-      hpSelect2: brannHP2,
-      hpSelect3: brannHP3,
+      hpSelect: {
+        option1: brannHP1,
+        name1: "scattershot",
+        option2: brannHP2,
+        name2: "Well Equipped",
+        option3: brannHP3,
+        name3: "Dino Tracking",
+      },
       sigTreasure: 1,
       heroPortrait: brann,
     },
@@ -158,7 +163,7 @@ function App() {
   ]);
 
   const [currentHero, setCurrentHero] = useState(heroes[0]);
-  const [currentHeroPower, setCurrentHeroPower] = useState(currentHero.heroPower);
+ 
 
   return (
     <>
@@ -166,8 +171,6 @@ function App() {
         heroes={heroes}
         currentHero={currentHero}
         setCurrentHero={setCurrentHero}
-        currentHeroPower={currentHeroPower}
-        setCurrentHeroPower={setCurrentHeroPower}
       ></Navbar>
     </>
   );
