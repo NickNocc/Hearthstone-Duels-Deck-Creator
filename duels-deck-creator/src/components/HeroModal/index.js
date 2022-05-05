@@ -1,8 +1,8 @@
 import React from "react";
-import HeroSelect from "../Heroes";
+import HeroSelect from "../HeroSelect";
 import "./Modal.css";
 
-export const Modal = ({ onClose, heroes, setCurrentHero }) => {
+export const HeroModal = ({ onClose, heroes, setCurrentHero }) => {
   return (
     <div className="modalBackdrop">
       <div className="modalContainer">
