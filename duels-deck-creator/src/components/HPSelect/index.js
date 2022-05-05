@@ -3,7 +3,6 @@ import React from "react";
 const HeroSelect = (props) => {
   const { onClose, heroes, setCurrentHero } = props;
 
-  console.log(setCurrentHero);
 
   return (
     <div className="heroWrapper">
