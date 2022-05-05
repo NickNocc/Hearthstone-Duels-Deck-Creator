@@ -6,11 +6,17 @@ import CardBackDefault from "../../Images/Defaults/card-back-default.png";
 import { HeroModal } from "../HeroModal";
 import { HPModal } from "../HPModal";
 
-export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
+export const Navbar = ({
+  heroes,
+  currentHero,
+  setCurrentHero,
+  currentHeroPower,
+  setCurrentHeroPower,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpenHP, setIsModalOpenHP] = useState(false);
 
-  console.log("Navbar current: ",  currentHero);
+  console.log("Navbar current: ", currentHero);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -22,8 +28,21 @@ export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
 
   return (
     <div>
-      {isModalOpen && <HeroModal onClose={toggleModal} heroes={heroes} setCurrentHero={setCurrentHero} />}
-      {isModalOpenHP && <HPModal onClose={toggleModalHP} currentHero={currentHero} setCurrentHero={setCurrentHero} />}
+      {isModalOpen && (
+        <HeroModal
+          onClose={toggleModal}
+          heroes={heroes}
+          setCurrentHero={setCurrentHero}
+        />
+      )}
+      {isModalOpenHP && (
+        <HPModal
+          onClose={toggleModalHP}
+          currentHero={currentHero}
+          currentHeroPower={currentHeroPower}
+          setCurrentHeroPower={setCurrentHeroPower}
+        />
+      )}
 
       <div className="navWrapper">
         <div className="navMain">
@@ -35,7 +54,7 @@ export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
           />
           <img
             className="navHP"
-            src={HeroPowerDefault}
+            src={currentHero.heroPower}
             alt="Hero Power Select"
             onClick={toggleModalHP}
           />

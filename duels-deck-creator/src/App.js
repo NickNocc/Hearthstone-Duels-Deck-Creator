@@ -18,6 +18,9 @@ import shaman from "./Images/Shaman/Hero_Fireheart.webp";
 import vanndar from "./Images/Vanndar/Hero_Vanndar.webp";
 import warlock from "./Images/Warlock/Hero_Willow.webp";
 import warrior from "./Images/Warrior/Hero_Rattlegore.webp";
+import brannHP1 from "./Images/Brann/BrannHP1.webp"
+import brannHP2 from "./Images/Brann/BrannHP2.webp"
+import brannHP3 from "./Images/Brann/BrannHP3.webp"
 
 function App() {
   const [heroes] = useState([
@@ -25,7 +28,10 @@ function App() {
       id: 101,
       heroName: "Brann",
       class: "Brann",
-      heroPower: 1,
+      heroPower: brannHP1,
+      hpSelect1: brannHP1,
+      hpSelect2: brannHP2,
+      hpSelect3: brannHP3,
       sigTreasure: 1,
       heroPortrait: brann,
     },
@@ -152,6 +158,7 @@ function App() {
   ]);
 
   const [currentHero, setCurrentHero] = useState(heroes[0]);
+  const [currentHeroPower, setCurrentHeroPower] = useState(currentHero.heroPower);
 
   return (
     <>
@@ -159,6 +166,8 @@ function App() {
         heroes={heroes}
         currentHero={currentHero}
         setCurrentHero={setCurrentHero}
+        currentHeroPower={currentHeroPower}
+        setCurrentHeroPower={setCurrentHeroPower}
       ></Navbar>
     </>
   );
