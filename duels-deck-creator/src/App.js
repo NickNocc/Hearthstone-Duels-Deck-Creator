@@ -181,7 +181,7 @@ function App() {
         option3: brannHP3,
         name3: "Dino Tracking",
       },
-      sigTreasure: 1,
+      sigTreasure: brannST1,
       stSelect: {
         option1: brannST1,
         name1: "Ol' Faithful",
@@ -211,7 +211,7 @@ function App() {
         option3: demon_hunterHP3,
         name3: "Illidari Strike",
       },
-      sigTreasure: 1,
+      sigTreasure: demon_hunterST1,
       stSelect: {
         option1: demon_hunterST1,
         name1: "Summoning Ritual",
@@ -241,7 +241,7 @@ function App() {
         option3: drektharHP3,
         name3: "War Commands",
       },
-      sigTreasure: 1,
+      sigTreasure: drektharST1,
       stSelect: {
         option1: drektharST1,
         name1: "Valorous Display",
@@ -271,7 +271,7 @@ function App() {
         option3: druidHP3,
         name3: "Harvest Time!",
       },
-      sigTreasure: 1,
+      sigTreasure: druidST1,
       stSelect: {
         option1: druidST1,
         name1: "Warden's Insight",
@@ -301,7 +301,7 @@ function App() {
         option3: eliseHP3,
         name3: "Starseeker",
       },
-      sigTreasure: 1,
+      sigTreasure: eliseST1,
       stSelect: {
         option1: eliseST1,
         name1: "StarSeeker's Tools",
@@ -331,7 +331,7 @@ function App() {
         option3: finleyHP3,
         name3: "Power Up!",
       },
-      sigTreasure: 1,
+      sigTreasure: finleyST1,
       stSelect: {
         option1: finleyST1,
         name1: "Finley's Pith Helmet",
@@ -361,7 +361,7 @@ function App() {
         option3: hunterHP3,
         name3: "Savage Secrets",
       },
-      sigTreasure: 1,
+      sigTreasure: hunterST1,
       stSelect: {
         option1: hunterST1,
         name1: "Slate's Syringe",
@@ -391,7 +391,7 @@ function App() {
         option3: mageHP3,
         name3: "Frost Shards",
       },
-      sigTreasure: 1,
+      sigTreasure: mageST1,
       stSelect: {
         option1: mageST1,
         name1: "Wand of Dueling",
@@ -421,7 +421,7 @@ function App() {
         option3: paladinHP3,
         name3: "Modest Aspirations",
       },
-      sigTreasure: 1,
+      sigTreasure: paladinST1,
       stSelect: {
         option1: paladinST1,
         name1: "Royal Greatsword",
@@ -451,7 +451,7 @@ function App() {
         option3: priestHP3,
         name3: "Call of Madness",
       },
-      sigTreasure: 1,
+      sigTreasure: priestST1,
       stSelect: {
         option1: priestST1,
         name1: "Fractured Spirits",
@@ -481,7 +481,7 @@ function App() {
         option3: renoHP3,
         name3: "Arcane Craftiness",
       },
-      sigTreasure: 1,
+      sigTreasure: renoST1,
       stSelect: {
         option1: renoST1,
         name1: "Reno's Lucky Hat",
@@ -511,7 +511,7 @@ function App() {
         option3: rogueHP3,
         name3: "Vile Concotion",
       },
-      sigTreasure: 1,
+      sigTreasure: rogueST1,
       stSelect: {
         option1: rogueST1,
         name1: "Deadly Weapons 101",
@@ -541,7 +541,7 @@ function App() {
         option3: shamanHP3,
         name3: "Stormcatcher",
       },
-      sigTreasure: 1,
+      sigTreasure: shamanST1,
       stSelect: {
         option1: shamanST1,
         name1: "Fluctuating Totem",
@@ -571,7 +571,7 @@ function App() {
         option3: vanndarHP3,
         name3: "Battle Tactics",
       },
-      sigTreasure: 1,
+      sigTreasure: vanndarST1,
       stSelect: {
         option1: vanndarST1,
         name1: "Forged in Light",
@@ -601,7 +601,7 @@ function App() {
         option3: warlockHP3,
         name3: "Soulcial Studies",
       },
-      sigTreasure: 1,
+      sigTreasure: warlockST1,
       stSelect: {
         option1: warlockST1,
         name1: "Impish Aid",
@@ -631,7 +631,7 @@ function App() {
         option3: warriorHP3,
         name3: "Magnetic Mines",
       },
-      sigTreasure: 1,
+      sigTreasure: warriorST1,
       stSelect: {
         option1: warriorST1,
         name1: "Auto-Armaments",
