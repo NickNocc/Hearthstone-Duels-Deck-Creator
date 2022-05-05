@@ -2,25 +2,29 @@ import { useState } from "react";
 import "./App.css";
 
 import { Navbar } from "./components/Navbar";
-import brann from "./Images/Brann/Hero_Brann.webp";
-import demon_hunter from "./Images/Demon_Hunter/Hero_Stelina.webp";
-import drekthar from "./Images/DrekThar/Hero_DrekThar.webp";
-import druid from "./Images/Druid/Hero_Omu.webp";
-import elise from "./Images/Elise/Hero_Elise.webp";
-import finley from "./Images/Finley/Hero_Finley.webp";
-import hunter from "./Images/Hunter/Hero_Slate.webp";
-import mage from "./Images/Mage/Hero_Mozaki.webp";
-import paladin from "./Images/Paladin/Hero_Turalyon.webp";
-import priest from "./Images/Priest/Hero_Illucia.webp";
-import reno from "./Images/Reno/Hero_Reno.webp";
-import rogue from "./Images/Rogue/Hero_Lilian.webp";
-import shaman from "./Images/Shaman/Hero_Fireheart.webp";
-import vanndar from "./Images/Vanndar/Hero_Vanndar.webp";
-import warlock from "./Images/Warlock/Hero_Willow.webp";
-import warrior from "./Images/Warrior/Hero_Rattlegore.webp";
-import brannHP1 from "./Images/Brann/BrannHP1.webp"
-import brannHP2 from "./Images/Brann/BrannHP2.webp"
-import brannHP3 from "./Images/Brann/BrannHP3.webp"
+
+import {
+  brann,
+  demon_hunter,
+  drekthar,
+  druid,
+  elise,
+  finley,
+  hunter,
+  mage,
+  paladin,
+  priest,
+  reno,
+  rogue,
+  shaman,
+  vanndar,
+  warlock,
+  warrior,
+  brannHP1,
+  brannHP2,
+  brannHP3,
+  de
+} from "./Images/index";
 
 function App() {
   const [heroes] = useState([
@@ -31,7 +35,7 @@ function App() {
       heroPower: brannHP1,
       hpSelect: {
         option1: brannHP1,
-        name1: "scattershot",
+        name1: "Scattershot",
         option2: brannHP2,
         name2: "Well Equipped",
         option3: brannHP3,
@@ -44,7 +48,7 @@ function App() {
       id: 102,
       heroName: "Stelina",
       class: "Demon_Hunter",
-      heroPower: 1,
+      heroPower: demon,
       sigTreasure: 1,
       heroPortrait: demon_hunter,
     },
@@ -163,7 +167,6 @@ function App() {
   ]);
 
   const [currentHero, setCurrentHero] = useState(heroes[0]);
- 
 
   return (
     <>
