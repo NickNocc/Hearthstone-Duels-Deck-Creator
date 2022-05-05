@@ -5,10 +5,10 @@ import HeroPowerDefault from "../../Images/Defaults/HeroPower_Default.webp";
 import CardBackDefault from "../../Images/Defaults/card-back-default.png";
 import { Modal } from "../Modal";
 
-export const Navbar = ({ heroes, currentHero, setHeroes }) => {
+export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  console.log(currentHero);
+  console.log("Navbar current: ",  currentHero);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -16,7 +16,7 @@ export const Navbar = ({ heroes, currentHero, setHeroes }) => {
 
   return (
     <div>
-      {isModalOpen && <Modal onClose={toggleModal} heroes={heroes} setHeroes={setHeroes} />}
+      {isModalOpen && <Modal onClose={toggleModal} heroes={heroes} setCurrentHero={setCurrentHero} />}
 
       <div className="navWrapper">
         <div className="navMain">
