@@ -3,7 +3,6 @@ import React from "react";
 const HPSelect = (props) => {
   const { onClose, currentHero, setCurrentHero } = props;
 
-
   return (
     <div className="heroWrapper">
       <div onClick={onClose} className="heroSelect">
@@ -12,4 +11,5 @@ const HPSelect = (props) => {
     </div>
   );
 };
+
 export default HPSelect;

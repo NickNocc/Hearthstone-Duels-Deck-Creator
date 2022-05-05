@@ -1,5 +1,5 @@
 import React from "react";
-import HPSelect from "../HeroSelect";
+import HPSelect from "../HPSelect";
 import "./Modal.css";
 
 export const HPModal = ({ onClose, currentHero, setCurrentHero }) => {

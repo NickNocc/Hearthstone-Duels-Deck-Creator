@@ -1,6 +1,6 @@
-import React from "react";
-import HeroSelect from "../HeroSelect";
-import "./Modal.css";
+// import React from "react";
+// import HeroSelect from "../HeroSelect";
+// import "./Modal.css";
 
 // export const HpModal = ({ onClose, heroes, setCurrentHero }) => {
 //   return (
