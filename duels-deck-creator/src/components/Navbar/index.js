@@ -4,9 +4,11 @@ import "./Navbar.css";
 import HeroPowerDefault from "../../Images/Defaults/HeroPower_Default.webp";
 import CardBackDefault from "../../Images/Defaults/card-back-default.png";
 import { HeroModal } from "../HeroModal";
+import { HPModal } from "../HpModal";
 
 export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpenHP, setIsModalOpenHP] = useState(false);
 
   console.log("Navbar current: ",  currentHero);
 
@@ -14,9 +16,14 @@ export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
     setIsModalOpen(!isModalOpen);
   };
 
+  const toggleModalHP = () => {
+    setIsModalOpenHP(!isModalOpenHP);
+  };
+
   return (
     <div>
       {isModalOpen && <HeroModal onClose={toggleModal} heroes={heroes} setCurrentHero={setCurrentHero} />}
+      {isModalOpenHP && <HPModal onClose={toggleModalHP} currentHero={currentHero} setCurrentHero={setCurrentHero} />}
 
       <div className="navWrapper">
         <div className="navMain">
@@ -30,6 +37,7 @@ export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
             className="navHP"
             src={HeroPowerDefault}
             alt="Hero Power Select"
+            onClick={toggleModalHP}
           />
           <img
             className="navST"

@@ -1,6 +1,6 @@
 import React from "react";
 
-const HPSelect = (props) => {
+const HeroSelect = (props) => {
   const { onClose, heroes, setCurrentHero } = props;
 
 
@@ -28,4 +28,4 @@ const HPSelect = (props) => {
     </div>
   );
 };
-export default HPSelect;
+export default HeroSelect;
