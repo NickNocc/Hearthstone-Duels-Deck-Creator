@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { CardSets } from "./components/CardSet";
 
 import { Navbar } from "./components/Navbar";
 
@@ -171,7 +172,7 @@ function App() {
     {
       id: 1,
       heroName: "Brann",
-      class: "Brann",
+      class: "hunter%2Cwarrior",
       heroPower: brannHP1,
       hpSelect: {
         option1: brannHP1,
@@ -201,7 +202,7 @@ function App() {
     {
       id: 2,
       heroName: "Stelina",
-      class: "Demon_Hunter",
+      class: "demonhunter",
       heroPower: demon_hunterHP1,
       hpSelect: {
         option1: demon_hunterHP1,
@@ -290,8 +291,8 @@ function App() {
     },
     {
       id: 5,
-      heroName: "Elisea",
-      class: "Druid,Priest",
+      heroName: "Elise",
+      class: "druid,priest",
       heroPower: eliseHP1,
       hpSelect: {
         option1: eliseHP1,
@@ -659,6 +660,7 @@ function App() {
         currentHero={currentHero}
         setCurrentHero={setCurrentHero}
       ></Navbar>
+      <CardSets currentHero={currentHero}></CardSets>
     </>
   );
 }
