@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-// import HeroDefault from "../../Images/Defaults/Hero_Default.webp";
-import HeroPowerDefault from "../../Images/Defaults/HeroPower_Default.webp";
-import CardBackDefault from "../../Images/Defaults/card-back-default.png";
 import { HeroModal } from "../HeroModal";
 
 

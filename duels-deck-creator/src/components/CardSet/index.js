@@ -35,7 +35,6 @@ export const CardSets = ({ currentHero }) => {
           ? cardData.map((card, i) => (
             <span onClick={() => {
               setDeckList(oldState => [...oldState, card])
-              console.log(deckList);
             }}>
               <img
                 src={card.image}

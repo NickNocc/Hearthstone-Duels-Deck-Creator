@@ -12,7 +12,13 @@
 }
 
 .deckList {
-    width: 40%;
+    width: 20%;
     border: 2px black solid;
     align-self: stretch;
+}
+
+.singleCard {
+    width: 97%;
+    padding: 2px;
+    border: 1px blue solid;
 }
