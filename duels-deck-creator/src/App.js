@@ -172,7 +172,7 @@ function App() {
     {
       id: 1,
       heroName: "Brann",
-      class: "hunter%2Cwarrior",
+      class: "hunter,warrior",
       heroPower: brannHP1,
       hpSelect: {
         option1: brannHP1,
@@ -232,7 +232,7 @@ function App() {
     {
       id: 3,
       heroName: "Drek'thar",
-      class: "Neutral",
+      class: "neutral",
       heroPower: drektharHP1,
       hpSelect: {
         option1: drektharHP1,
@@ -262,7 +262,7 @@ function App() {
     {
       id: 4,
       heroName: "Omu",
-      class: "Druid",
+      class: "druid",
       heroPower: druidHP1,
       hpSelect: {
         option1: druidHP1,
@@ -322,7 +322,7 @@ function App() {
     {
       id: 6,
       heroName: "Finley",
-      class: "Hunter,Warrior",
+      class: "paladin,shaman",
       heroPower: finleyHP1,
       hpSelect: {
         option1: finleyHP1,
@@ -352,7 +352,7 @@ function App() {
     {
       id: 7,
       heroName: "Slate",
-      class: "Hunter",
+      class: "hunter",
       heroPower: hunterHP1,
       hpSelect: {
         option1: hunterHP1,
@@ -382,7 +382,7 @@ function App() {
     {
       id: 8,
       heroName: "Mozaki",
-      class: "Mage",
+      class: "mage",
       heroPower: mageHP1,
       hpSelect: {
         option1: mageHP1,
@@ -412,7 +412,7 @@ function App() {
     {
       id: 9,
       heroName: "Turalyon",
-      class: "Paladin",
+      class: "paladin",
       heroPower: paladinHP1,
       hpSelect: {
         option1: paladinHP1,
@@ -442,7 +442,7 @@ function App() {
     {
       id: 10,
       heroName: "Illucia",
-      class: "Priest",
+      class: "priest",
       heroPower: priestHP1,
       hpSelect: {
         option1: priestHP1,
@@ -472,7 +472,7 @@ function App() {
     {
       id: 11,
       heroName: "Reno",
-      class: "Mage,Rogue",
+      class: "mage,rogue",
       heroPower: renoHP1,
       hpSelect: {
         option1: renoHP1,
@@ -502,7 +502,7 @@ function App() {
     {
       id: 12,
       heroName: "Lilian",
-      class: "Rogue",
+      class: "rogue",
       heroPower: rogueHP1,
       hpSelect: {
         option1: rogueHP1,
@@ -532,7 +532,7 @@ function App() {
     {
       id: 13,
       heroName: "Fireheart",
-      class: "Shaman",
+      class: "shaman",
       heroPower: shamanHP1,
       hpSelect: {
         option1: shamanHP1,
@@ -562,7 +562,7 @@ function App() {
     {
       id: 14,
       heroName: "Vanndar",
-      class: "Neutral",
+      class: "neutral",
       heroPower: vanndarHP1,
       hpSelect: {
         option1: vanndarHP1,
@@ -592,7 +592,7 @@ function App() {
     {
       id: 15,
       heroName: "Willow",
-      class: "Warlock",
+      class: "warlock",
       heroPower: warlockHP1,
       hpSelect: {
         option1: warlockHP1,
@@ -622,7 +622,7 @@ function App() {
     {
       id: 16,
       heroName: "Rattlegore",
-      class: "Warrior",
+      class: "warrior",
       heroPower: warriorHP1,
       hpSelect: {
         option1: warriorHP1,
