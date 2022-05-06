@@ -2,3 +2,17 @@
     width: 16vw;
     height: 22vw;
 }
+
+.cardList {
+    width: 100%;
+}
+
+.deckHolder {
+    display: flex;
+}
+
+.deckList {
+    width: 40%;
+    border: 2px black solid;
+    align-self: stretch;
+}
