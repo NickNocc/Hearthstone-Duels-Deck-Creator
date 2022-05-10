@@ -7,7 +7,7 @@ const hero = "paladin";
 
 let fetcher = axios
   .get(
-    `https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=${activeSets}&class=${hero}&access_token=US5DCIpIr2yLNShXsi5WvdLFNndeLZ5Eek`
+    `https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=${activeSets}&class=${hero}&access_token=USYmjyW4vbp16lQmN70gq6UT0QaJCwA65C`
   )
   .then((data) => {
     let cards = data.data.cards;
