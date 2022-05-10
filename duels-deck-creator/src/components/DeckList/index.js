@@ -9,6 +9,7 @@ const DeckList = ({ deckList, setDeckList }) => {
               onClick={(e) => {
                 console.log(card);
                 setDeckList((oldState) =>
+                // Removes card that is clicked on
                   oldState.filter((cardRemover) => {
                     return cardRemover !== card;
                   })

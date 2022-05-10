@@ -1,13 +1,13 @@
 import React from "react";
 
-const HeroSelect = (props) => {
-  const { onClose, heroes, setCurrentHero } = props;
-
+const HeroSelect = ({ onClose, heroes, setCurrentHero }) => {
 
   return (
     <div className="heroWrapper">
       <div onClick={onClose} className="heroSelect">
+        {/* Maps heroes to modal for selection */}
         {heroes.map((hero, i) => (
+          // Wraps heroes in span so you can click to select them
           <span
             key={hero.id}
             onClick={() => {

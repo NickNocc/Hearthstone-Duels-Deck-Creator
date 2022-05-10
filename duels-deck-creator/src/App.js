@@ -168,6 +168,7 @@ import {
 } from "./Images/index";
 
 function App() {
+  // State filled with all hero options and info
   const [heroes] = useState([
     {
       id: 1,
@@ -651,15 +652,18 @@ function App() {
     },
   ]);
 
+  // Currently selected hero | Swap between heroes
   const [currentHero, setCurrentHero] = useState(heroes[0]);
 
   return (
     <div className="bgSet">
       <Navbar
+        // Sending down props to be used with other components
         heroes={heroes}
         currentHero={currentHero}
         setCurrentHero={setCurrentHero}
       ></Navbar>
+      {/* Sending down props to be used with other components */}
       <CardSets currentHero={currentHero}></CardSets>
     </div>
   );

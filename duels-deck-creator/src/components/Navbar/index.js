@@ -4,9 +4,13 @@ import { HeroModal } from "../HeroModal";
 
 
 export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
+  // State for modal
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // State that controls what hero power is selected
   const [currentHP, setCurrentHP] = useState(currentHero.heroPower);
+
+  // State that controls what signature treasure is selected
   const [currentST, setCurrentST] = useState(currentHero.sigTreasure)
 
   const handleChangeHP = (event) => {
@@ -15,7 +19,7 @@ export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
   const handleChangeST = (event) => {
     setCurrentST(event.target.value);
   };
-  // console.log("Navbar current: ", currentHero);
+
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);

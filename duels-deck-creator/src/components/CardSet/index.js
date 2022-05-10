@@ -6,22 +6,24 @@ const axios = require("axios");
 export const CardSets = ({ currentHero }) => {
   // console.log(currentHero);
 
+  // Cards for current class 
   const [cardData, setCardData] = useState(null);
 
+  // Tracker for decklist component
   const [deckList, setDeckList] = useState([]);
 
+  // Current sets in hearthstone duels
   const activeSets =
     "journey-to-ungoro,one-night-in-karazhan,whispers-of-the-old-gods,league-of-explorers,voyage-to-the-sunken-city,core,legacy,fractured-in-alterac-valley,united-in-stormwind,forged-in-the-barrens,madness-at-the-darkmoon-faire,scholomance-academy,goblins-vs-gnomes,naxxramas,saviors-of-uldum,kobolds-and-catacombs";
 
+  // Setting the class for the api call
   const hero = currentHero.class;
-  // console.log("hero class: ", currentHero.class);
 
   useEffect(() => {
     axios(
       `https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=${activeSets}&class=${hero}&pageSize=500&sort=groupByClass%3Aasc%2CmanaCost%3Aasc&access_token=IPmFKnK1T7yieIaQybb7uNiuhOo08VKL`
     ).then((data) => {
       let payload = data.data.cards;
-      // payload.sort((a,b) => a.classId - b.classId);
       setCardData(payload);
     });
   });
@@ -31,8 +33,10 @@ export const CardSets = ({ currentHero }) => {
   return (
     <div className="deckHolder">
       <div className="cardList">
+        {/* Mapping api data onto page */}
         {cardData
           ? cardData.map((card, i) => (
+            // Span that allows user to click on card to add it to decklist
             <span onClick={() => {
               setDeckList(oldState => [...oldState, card])
             }}>
