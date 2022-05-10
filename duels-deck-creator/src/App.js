@@ -654,14 +654,14 @@ function App() {
   const [currentHero, setCurrentHero] = useState(heroes[0]);
 
   return (
-    <>
+    <div className="bgSet">
       <Navbar
         heroes={heroes}
         currentHero={currentHero}
         setCurrentHero={setCurrentHero}
       ></Navbar>
       <CardSets currentHero={currentHero}></CardSets>
-    </>
+    </div>
   );
 }
 

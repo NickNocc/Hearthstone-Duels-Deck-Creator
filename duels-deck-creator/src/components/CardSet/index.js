@@ -18,7 +18,7 @@ export const CardSets = ({ currentHero }) => {
 
   useEffect(() => {
     axios(
-      `https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=${activeSets}&class=${hero}&pageSize=500&sort=groupByClass%3Aasc%2CmanaCost%3Aasc&access_token=USAyX7sJPh2pYrnm1oLiLn42P3x7Fozjpr`
+      `https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=${activeSets}&class=${hero}&pageSize=500&sort=groupByClass%3Aasc%2CmanaCost%3Aasc&access_token=IPmFKnK1T7yieIaQybb7uNiuhOo08VKL`
     ).then((data) => {
       let payload = data.data.cards;
       // payload.sort((a,b) => a.classId - b.classId);

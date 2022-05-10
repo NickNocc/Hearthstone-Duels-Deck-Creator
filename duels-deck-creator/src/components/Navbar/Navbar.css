@@ -28,3 +28,11 @@
     height: 80%;
     padding-top: 20px;
 }
+
+select {
+  height: fit-content;
+}
+
+.hpSelect {
+  position: absolute;
+}

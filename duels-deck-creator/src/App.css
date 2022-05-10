@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.bgSet {
+  background-image: url(Images/background.jpg);
+}

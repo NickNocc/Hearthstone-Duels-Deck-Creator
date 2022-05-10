@@ -44,7 +44,7 @@ export const Navbar = ({ heroes, currentHero, setCurrentHero }) => {
             src={currentHP}
             alt="Hero Power Select"
           />
-          <select value={currentHP} onChange={handleChangeHP}>
+          <select className="hpSelect" value={currentHP} onChange={handleChangeHP}>
             <option value={currentHero.hpSelect.option1}>{currentHero.hpSelect.name1}</option>
             <option value={currentHero.hpSelect.option2}>{currentHero.hpSelect.name2}</option>
             <option value={currentHero.hpSelect.option3}>{currentHero.hpSelect.name3}</option>
