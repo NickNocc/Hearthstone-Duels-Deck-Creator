@@ -17,6 +17,7 @@ const DeckList = ({ deckList, setDeckList }) => {
                 );
               }}
             >
+
               <img
                 src={card.cropImage}
                 key={i}

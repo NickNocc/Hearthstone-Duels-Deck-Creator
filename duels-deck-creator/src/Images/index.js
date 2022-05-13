@@ -158,3 +158,4 @@ export const warriorST3 = require("./Warrior/WarriorST3.webp");
 export const warriorST4 = require("./Warrior/WarriorST4.webp");
 export const warriorST5 = require("./Warrior/WarriorST5.webp");
 export const warriorST6 = require("./Warrior/WarriorST6.webp");
+export const manaCrystal = require("./Defaults/manaCrystal.jpg")

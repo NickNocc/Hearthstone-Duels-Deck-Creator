@@ -4,8 +4,8 @@ import "./CardSet.css";
 const axios = require("axios");
 const env = require("react-dotenv");
 
-export const CardSets = ({ currentHero }) => {
 
+export const CardSets = ({ currentHero }) => {
   // Cards for current class
   const [cardData, setCardData] = useState(null);
 
@@ -43,12 +43,13 @@ export const CardSets = ({ currentHero }) => {
                   setDeckList((oldState) => [...oldState, card]);
                 }}
               >
-                <img
-                  src={card.image}
-                  key={i}
-                  alt={card.name}
-                  className="hsCards"
-                />
+                  <img
+                    src={card.image}
+                    key={i}
+                    alt={card.name}
+                    className="hsCards"
+                  />
+
               </span>
             ))
           : null}
