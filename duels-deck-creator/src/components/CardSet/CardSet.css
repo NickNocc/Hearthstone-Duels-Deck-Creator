@@ -1,24 +1,31 @@
 .hsCards {
-    width: 16vw;
-    height: 22vw;
+  width: 16vw;
+  height: 22vw;
 }
 
 .cardList {
-    width: 100%;
+  width: 100%;
 }
 
 .deckHolder {
-    display: flex;
+  display: flex;
+  padding-top: 230px;
 }
 
 .deckList {
-    width: 20%;
-    border: 2px black solid;
-    align-self: stretch;
+  width: 20%;
+  border: 2px black solid;
+  align-self: stretch;
+  background-image: url(/src/Images/background.jpg);
 }
 
 .singleCard {
-    width: 97%;
-    padding: 2px;
-    border: 1px blue solid;
+  height: 4%;
+  width: 100%;
+  padding: 2px;
+}
+
+.deckListMain {
+  position: fixed;
+  height: 100%;
 }

@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import DeckList from "../DeckList";
 import "./CardSet.css";
 const axios = require("axios");
+const env = require("react-dotenv");
 
 export const CardSets = ({ currentHero }) => {
-  // console.log(currentHero);
 
-  // Cards for current class 
+  // Cards for current class
   const [cardData, setCardData] = useState(null);
 
   // Tracker for decklist component
@@ -21,7 +21,7 @@ export const CardSets = ({ currentHero }) => {
 
   useEffect(() => {
     axios(
-      `https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=${activeSets}&class=${hero}&pageSize=500&sort=groupByClass%3Aasc%2CmanaCost%3Aasc&access_token=IPmFKnK1T7yieIaQybb7uNiuhOo08VKL`
+      `https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=${activeSets}&class=${hero}&pageSize=500&sort=groupByClass%3Aasc%2CmanaCost%3Aasc&access_token=${env.default.API_KEY}`
     ).then((data) => {
       let payload = data.data.cards;
       setCardData(payload);
@@ -36,16 +36,19 @@ export const CardSets = ({ currentHero }) => {
         {/* Mapping api data onto page */}
         {cardData
           ? cardData.map((card, i) => (
-            // Span that allows user to click on card to add it to decklist
-            <span onClick={() => {
-              setDeckList(oldState => [...oldState, card])
-            }}>
-              <img
-                src={card.image}
+              // Span that allows user to click on card to add it to decklist
+              <span
                 key={i}
-                alt={card.name}
-                className="hsCards"
-              />
+                onClick={() => {
+                  setDeckList((oldState) => [...oldState, card]);
+                }}
+              >
+                <img
+                  src={card.image}
+                  key={i}
+                  alt={card.name}
+                  className="hsCards"
+                />
               </span>
             ))
           : null}
