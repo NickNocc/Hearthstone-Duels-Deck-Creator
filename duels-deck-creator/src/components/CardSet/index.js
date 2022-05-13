@@ -28,7 +28,6 @@ export const CardSets = ({ currentHero }) => {
     });
   });
 
-  // console.log("cardData: ", cardData);
 
   return (
     <div className="deckHolder">
