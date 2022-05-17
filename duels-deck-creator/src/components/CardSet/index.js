@@ -4,7 +4,6 @@ import "./CardSet.css";
 const axios = require("axios");
 const env = require("react-dotenv");
 
-
 export const CardSets = ({ currentHero }) => {
   // Cards for current class
   const [cardData, setCardData] = useState(null);
@@ -22,8 +21,11 @@ export const CardSets = ({ currentHero }) => {
   useEffect(() => {
     axios(
       `https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=${activeSets}&class=${hero}&pageSize=500&sort=groupByClass%3Aasc%2CmanaCost%3Aasc&access_token=${env.default.API_KEY}`
-    )
-
+    ).then((data) => {
+      let payload = data.data.cards;
+      setCardData(payload);
+    });
+  });
 
   return (
     <div className="deckHolder">
@@ -38,13 +40,12 @@ export const CardSets = ({ currentHero }) => {
                   setDeckList((oldState) => [...oldState, card]);
                 }}
               >
-                  <img
-                    src={card.image}
-                    key={i}
-                    alt={card.name}
-                    className="hsCards"
-                  />
-
+                <img
+                  src={card.image}
+                  key={i}
+                  alt={card.name}
+                  className="hsCards"
+                />
               </span>
             ))
           : null}
