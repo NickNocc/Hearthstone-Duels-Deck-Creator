@@ -19,14 +19,6 @@ export const CardSets = ({ currentHero }) => {
   // Setting the class for the api call
   const hero = currentHero.class;
 
-  useEffect(() => {
-    axios(
-      `https://us.api.blizzard.com/hearthstone/cards?locale=en_US&set=${activeSets}&class=${hero}&pageSize=500&sort=groupByClass%3Aasc%2CmanaCost%3Aasc&access_token=${env.default.API_KEY}`
-    ).then((data) => {
-      let payload = data.data.cards;
-      setCardData(payload);
-    });
-  });
 
 
   return (
